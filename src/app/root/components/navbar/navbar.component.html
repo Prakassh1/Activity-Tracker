@@ -1,0 +1,21 @@
+<div class="app-nav">
+  <div class="wrapper">
+   <div class="uname">
+
+      <b class="text-white">Welcome, {{this.currentUser}}</b>
+   </div>
+   <a routerLink="bmi"
+   routerLinkActive="active">BMI</a>
+    <a routerLink="schedule"
+       routerLinkActive="active">Schedule</a>
+
+    <a routerLink="meals"
+       routerLinkActive="active">Meals</a>
+
+    <a routerLink="workouts"
+       routerLinkActive="active">Workouts</a>
+       <button (click)="logoutUser()" class="btn btn-warning float-sm-right" style="margin-top: 10px;">Logout</button>
+       
+   
+
+</div>

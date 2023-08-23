@@ -1,0 +1,64 @@
+:host {
+  margin: -1px 0 0;
+  display: block;
+}
+.app-nav {
+  background: #8022b0;
+  text-align: center;
+  a {
+    color: rgba(255,255,255,.6);
+    padding: 15px 0;
+    display: inline-block;
+    min-width: 150px;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    &:hover,
+    &.active {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+  }
+}
+.wrapper {
+  max-width: 800px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.uname{
+  width:20% ;
+  margin-top: 10px;
+  font-style:"color:white;";
+  background-color: #09090a;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.app-header {
+  background: #fff;
+  border-bottom: 1px solid #c1cedb;
+  padding: 15px 0;
+  text-align: center;
+  img {
+    display: inline-block;
+  }
+  &__user-info {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    cursor: pointer;
+  }
+  span {
+    background: svg(logout) no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    display: block;
+    opacity: 0.4;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

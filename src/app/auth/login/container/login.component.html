@@ -1,0 +1,14 @@
+<div>
+<div class="text-center" style="font-size: 40px;color: black; background-color: darkorchid;"><b>Activity Tracker</b></div>
+  <app-auth-form (submitted)="loginUser($event)">
+
+    <h1>Login</h1>
+
+    <a routerLink="/auth/register">Not registered?</a>
+
+    <button type="submit">Login</button>
+
+    <div class="error" *ngIf="error">{{ error }}</div>
+  </app-auth-form>
+
+</div>
